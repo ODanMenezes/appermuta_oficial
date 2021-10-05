@@ -1,0 +1,1083 @@
+/*--------------------------------------------------------------
+	Common
+--------------------------------------------------------------*/
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: scrollbar;
+}
+
+body {
+  background: #fff;
+  font: Gilroy;
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  border: 0;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left !important;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.leftauto {
+  right: 0 !important;
+  left: auto !important;
+}
+
+/*--------------------------------------------------------------
+	------ MODAL
+--------------------------------------------------------------*/
+
+.modalcadastro{
+  display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	flex-flow: row wrap;
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  align-items: center;
+  box-shadow: 8px 8px 32px #000000;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#msform {
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+#msform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  padding: 10%;
+  position: relative;
+}
+
+.form-card {
+  text-align: left
+}
+
+#msform fieldset:not(:first-of-type) {
+  display: none
+}
+
+#msform input,
+#msform textarea {
+  padding: 8px 15px 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 25px;
+  margin-top: 2px;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  font-family: Gilroy;
+  color: #fff;
+  background-color: #373131;
+  font-size: 16px;
+  letter-spacing: 1px
+}
+
+#msform input:focus,
+#msform textarea:focus {
+  transition-duration: 0.8s;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 2px solid #820AD1;
+  border-radius: 10px;
+  background-color: #0c0c0c ;
+  outline-width: 0
+}
+
+#msform .action-button {
+  width: 100px;
+  background: #820AD1;
+  color: white;
+  border: 0 none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 0px 10px 5px;
+  float: right
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+  background-color: #0c0c0c;
+  border-radius: 5px;
+}
+
+#msform .action-button-previous {
+  width: 100px;
+  background: #820AD1;
+  font-weight: normal;
+  color: white;
+  border: 0 none;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px 10px 0px;
+  float: right;
+  border-radius: 5px;
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+  background-color: #0c0c0c;
+  border-radius: 5px;
+}
+
+.card {
+  font-family: Gilroy;
+  z-index: 0;
+  border: none;
+  position: relative
+}
+
+.fs-title {
+  font-family: Gilroy;
+  font-size: 25px;
+  color: #820AD1;
+  margin-bottom: auto;
+  font-weight: normal;
+  text-align: left
+}
+
+.title-modal{
+  font-family: Gilroy;
+  font-size: 50px;
+  font-weight: normal;
+  padding-top: 10%;
+  text-align: center;
+  color: #fff;
+  position: inherit absolute;
+}
+
+.purple-text {
+  color: #820AD1;
+  font-weight: normal;
+  font-family: Gilroy;
+}
+
+.steps {
+  font-family: Gilroy;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 20px;
+  color: #fff;
+  margin-bottom: 5px;
+  font-weight:initial;
+  text-align: center;
+  background-image: linear-gradient(to right,#0c0c0c, #820AD1);
+  border-radius: 20px;
+  box-shadow: 4px 8px 12px #0000003b;
+}
+
+.fieldlabels {
+  font-family: Gilroy;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #820AD1;
+  text-align: left
+}
+
+#progressbar {
+  margin-bottom: 20px;
+  overflow: hidden;
+  color: lightgrey
+}
+
+#progressbar .active {
+  color: #820AD1
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 15px;
+  width: 25%;
+  float: left;
+  position: relative;
+  font-weight: 400
+}
+
+#progressbar #account:before {
+  font-family: FontAwesome;
+  content: "\f13e"
+}
+
+#progressbar #personal:before {
+  font-family: FontAwesome;
+  content: "\f007"
+}
+
+#progressbar #payment:before {
+  font-family: FontAwesome;
+  content: "\f030"
+}
+
+#progressbar #confirm:before {
+  font-family: FontAwesome;
+  content: "\f00c"
+}
+
+#progressbar li:before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  background: #0c0c0c;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px
+}
+
+#progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #0c0c0c;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: #820AD1
+}
+
+.progress {
+  height: 20px
+}
+
+.progress-bar {
+  background-color: #820AD1
+}
+
+.fit-image {
+  width: 100%;
+  object-fit: cover
+}
+
+/* MEDIDOR */
+
+
+
+/*-----------------------------------
+-------- MODAL
+-----------------------------------*/
+
+.logotipo {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70%; 
+  width: 70%; 
+  filter: drop-shadow(0px 0px 4px #1d1d1dd5);
+}
+
+.logotipo:hover, .logotipo:focus, .logotipo:active {
+  filter: drop-shadow( 0px 0px 4px #820AD1);
+  -webkit-transition-duration: scale(1.1);
+  transition-duration: scale(1.1);
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+
+/*-----------------------------*/
+
+.caixa {
+  display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+  float: inherit;
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	flex-flow: row wrap;
+  width: 100%;
+  height: 40vw;
+  background-color: #0c0c0c;
+  color: #fff;
+}
+
+.wrapper {         
+  float: inherit;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 15px;
+  background-color: transparent;
+  color: #444;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1vw;
+}
+
+/*--------------------------------------------------------------
+	BOTÕES
+--------------------------------------------------------------*/
+
+.buttonpesq {
+  border-radius: 50px;
+  outline: none;
+  height: 60px;
+  width: 100px;
+  box-shadow: 8px 8px 32px #000000;
+  background-color: #810ad177;
+  color: #ffffff;
+  border-color: transparent;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+
+  
+}.buttonpesq:hover, .buttonpesq:focus, .buttonpesq:active{
+  border-radius: 50px;
+  outline: none;
+  height: 60px;
+  width: 100px;
+  box-shadow: 8px 8px 32px #000000;
+  background-color: #fff;
+  color: #820AD1;
+  border-color: transparent;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.buttoncdst{
+  background-color: #820AD1;
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 1vw;
+  margin: 10%;
+  outline: none;
+  height: 3vw;
+  width: 10vw;
+  border: none;
+  border-radius: 30px;
+  padding: 20;
+}.buttoncdst:hover, .buttoncdst:focus, .buttoncdst:active{
+  background-color: #fff;
+  color: #820AD1;
+  transition-duration: 0.8s;
+}
+
+.buttonprof{
+  background-color: #820AD1;
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 2vw;
+  outline: none;
+  height: 3vw;
+  width: 15vw;
+  border: none;
+  border-radius: 30px;
+  padding: 20;
+  margin-top: 2vw;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}.buttonprof:hover, .buttonprof:focus, .buttonprof:active{
+  background-color: #fff;
+  color: #820AD1;
+  transition-duration: 0.8s;
+  box-shadow: 8px 8px 32px #000000;
+}
+
+.main-box{
+  width: 300px;
+  height: 400px;
+  box-shadow: 2px 4px 2px 4px rgba(70, 224, 151, 0.65);
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.button-nav-menu{
+  text-decoration: none;
+  font-family: Gilroy;
+  font-size: 80%;
+  color: #fff;
+  background-color: #222122;
+  box-shadow: 16px 16px 64px #000000;
+  padding: 2%;
+  height: 10%;
+  border: none;
+  border-radius: 5px;
+}.button-nav-menu:hover, .button-nav-menu:focus, .button-nav-menu:active{
+  text-decoration: none;
+  background-color: #820AD1;
+}
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.button-categories{
+  text-align: center;
+  text-decoration: none;
+  font-family: Gilroy;
+  font-size: 1.5vw;
+  background-color: #820AD1;
+  color: #fff;
+  border-radius: 5px;
+  padding: 1vw;
+  border: none;
+  width: auto;
+  height: auto;
+}.button-categories:hover, .button-categories:focus, .button-categories:active{
+  background-color: #fff;
+  color: #820AD1;
+  box-shadow: 32px 32px 128px #000000;
+  transition-duration: 2.0s;
+}
+
+.button-close{
+  text-align: center;
+  color: #fff;
+  background-color:#f7093d;
+  border-radius: 20px;
+  padding-top: 2%;
+  box-shadow: 16px 16px 64px #000000;
+}.button-close:hover, .button-close:focus{
+  text-align: center;
+  background-color:#0c0c0c;
+  color: #820AD1;
+  border-radius: 20px;
+  padding-top: 2%;
+  box-shadow: 16px 16px 64px #000000;
+}
+
+.action-nav-menu{
+  text-decoration: none;
+  font-family: Gilroy;
+  color: #fff;
+  background-color: #222122;
+  box-shadow: 16px 16px 64px #000000;
+  padding: 2%;
+
+}
+
+.scrollToTopBtn {
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 48px;
+  width: 48px;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  
+  z-index: 100;
+ 
+  opacity: 0;
+
+  transform: translateY(100px);
+
+  transition: all 0.5s ease;
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/*--------------------------------------------------------------
+	------ SEÇÕES
+--------------------------------------------------------------*/
+
+.section1{
+  background-color: #0a0a0a;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
+  width: 100%;
+  display: flex;
+}
+.section1 > div {
+  flex: 1;
+  vertical-align: middle;
+  width: auto;
+  height: auto;
+  margin: auto;
+  object-fit: contain;
+}
+
+.section2{
+  background-color: #820AD1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
+  width: 100%;
+  display: flex;
+  padding-top: auto;
+}
+.section2 > div {
+  flex: 1;
+  vertical-align: middle;
+  width: auto;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+}
+
+.section3{
+  background-color: #0c0c0c;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 40vw;
+  width: 100%;
+  display: flex;
+}
+.section3 > div {
+  position: inherit;
+  flex: 1;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.caixa1{
+  width: 35vw;
+  height: 40vw;
+  text-align: right;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  color: #820AD1;
+  font-family: Gilroy;
+  font-size: 2vw;
+  box-shadow: 0 12px 12px #0000006d;
+  padding: 1em;
+  transform: translateX(75%);
+} 
+
+.caixa2{
+  text-align: center;
+  text-decoration: none;
+  font-family: Gilroy;
+  font-size: 1.5vw;
+  background-color: #ffffff;
+  color: #820AD1;
+  border-radius: 20px;
+  padding: 2vw;
+  border: none;
+  width: 20vw;
+  height: 30vw;
+} 
+
+.input_cadastro{
+  background-color: transparent;
+  outline: none;
+  font-family: Gilroy;
+  font-size: 2vw;
+  border: none;
+  border-bottom: 2px solid #820AD1;
+  height: 50%;
+  width: 100%;
+  margin-right: 2%;
+  letter-spacing: 2px;
+  width: 80%;
+  color: #fff;
+}
+
+.main-box{
+  font-family: Gilroy;
+  font-size: 1vw;
+  width: 20vw;
+  height: 10vw;
+  box-shadow: 4px 4px 4px 4px #0c0c0c35;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #fff;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.big-circle{
+  width: 150px;
+  height: 150px;
+  border: 10px solid #820AD1;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+}
+.small-circle{
+  width: 140px;
+  height: 140px;
+  border: 10px solid #0c0c0c;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  background-image: url("https://c.tenor.com/_MDj_wHydu0AAAAd/avengers-endgame-thanos.gif");
+  background-position: center;
+  background-size: cover;
+}
+
+.heading-name{
+margin: 3px 0; 
+font-family: Gilroy; 
+}
+
+.heading-work{
+  color: #820AD1;
+  font-weight: 300;
+  margin: 3px 0;
+}
+p{
+  font-family: Gilroy;
+  padding: 0 20px;
+  margin-bottom: 25px;
+}
+
+.follow_btn{
+  font-family: Gilroy;
+  text-decoration: none;
+  background: #820AD1;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.follow_btn:hover{
+  text-decoration: none;
+  color: #fff;
+  background: #0c0c0c;
+  font-weight: 600;
+}
+
+/*--------------------------------------------------------------
+	------ SLIDES DE COMENTÁRIOS
+--------------------------------------------------------------*/
+
+.wrapper-slide {         
+  float: inherit;
+  display: grid;
+  grid-template-columns: 20px 20px 20px;
+  grid-gap: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: auto;
+  width: auto;
+}
+
+  .slider-wrap {
+    height: auto;
+    width: auto;
+    margin-top: 50%;
+    margin-bottom: 50vw;
+  }
+
+  .slider-wrap .slider {
+    position: inherit;
+    margin: auto;
+  }
+
+  .slider-item {
+    height: auto;
+    width: 40vw;
+    padding: 1vw 0 2vw 2vw;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+  }
+
+  .slider-item .animation-card_image {
+    max-width: 60px;
+    max-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 9px rgba(241, 241, 244, 0.275);
+    background-color: #ffffff49;
+    margin: auto;
+  }
+
+  .slider-item .animation-card_image img {
+    width: 7vw;
+    height: 8vw;
+    border-radius: 30px;
+    object-fit: cover;
+    position: inherit;
+  }
+
+  .slider-item .animation-card_content {
+    width: 100%;
+    max-width: 374px;
+    margin-left: 26px;
+    font-family: Gilroy;
+    font-size: 2vw;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .slider-item .animation-card_content .animation-card_content_title {
+    color: #820AD1;
+    font-family: Gilroy;
+    font-size: 1vw;
+    letter-spacing: -0.18px;
+    line-height: 24px;
+  }
+
+  .slider-item .animation-card_content .animation-card_content_description {
+    color: #0c0c0c;
+    font-size: 1.8vw;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 24px;
+  }
+
+  .slider-item .animation-card_content .animation-card_content_city {
+    color: #820AD1;
+    font-size: 11px;
+    margin: 10px 0 0 0;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #696d7496;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+/*--------------------------------------------------------------
+	Texto Estilo Digitado - HOME
+--------------------------------------------------------------*/
+.slide {
+  font-family: Gilroy;
+  font-size: 3vw;
+  color:rgba(255, 255, 255, 0);
+  background:
+    linear-gradient(-90deg,#820AD1 5px,#0000 0) 10px 0,
+    linear-gradient(#ffffff 0 0) 0 0;
+  background-size:calc(var(--n)*1ch) 200%;
+  -webkit-background-clip:padding-box,text;
+  background-clip:padding-box,text;
+  background-repeat:no-repeat;
+  animation: 
+   b .6s infinite steps(1),   
+   t calc(var(--n)*.2s) steps(var(--n)) forwards;
+
+}
+
+.transparent {
+  --c:#0000;
+}
+.move {
+  animation: 
+   b .9s infinite linear,   
+   t calc(var(--n)*.3s) linear infinite alternate;
+}
+.step {
+  animation-timing-function:steps(1), steps(var(--n))
+}
+
+@keyframes t{
+  from {background-size:0 200%}
+}
+@keyframes b{
+  50% {background-position:0 -100%,0 0}
+}
+
+/*--------------------------------------------------------------
+	------
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	------Input
+--------------------------------------------------------------*/
+
+.input-modal{
+  background-color: transparent;
+  outline: none;
+  font-family: Gilroy;  
+  color:#820AD1;
+  border: none;
+  border-bottom: 2px solid #820AD1;
+  letter-spacing: 3px; 
+}
+
+/*--------------------------------------------------------------
+	------ Barra de Rolagem
+--------------------------------------------------------------*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0c0c0c;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #820AD1; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d1bedd; 
+}
+
+/*-------------------------------------------------------------
+-------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	TEXT
+--------------------------------------------------------------*/
+ .text-link{
+  background-color: transparent;
+  font-family: Gilroy;
+  font-size: 3vw;
+  color: #ffffff;
+ }.text-link:hover, .text-link:active{
+  text-decoration: underline;
+ }
+
+ .text-main{
+  font-family: Gilroy;
+  font-size: 3vw;
+  color: #fff;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3vw;
+} 
+
+.text-typing{
+  font-family: Gilroy;
+  font-size: 3vw;
+  color: #ffffff;
+  float: left;
+  font-weight:lighter;
+  margin-top: 15%;
+  margin-left: 10%;
+}
+
+.text-box-service{
+  font-family: Gilroy;
+  font-size: 1vw;
+  color: #820AD1;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1vwvw;
+} 
+
+ .container{
+   font-family: Gilroy;
+   text-decoration: underline;
+   font-size: 3vw;
+   line-height: 5vw;
+   padding: 2vw;
+ }
+
+ .col-sm-12{
+   width: 80%;
+ }
+/*-------------------------------------------------------------
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+	------ Rodapé
+--------------------------------------------------------------*/
+
+.site-footer
+{
+  height: auto;
+  width: 100%;
+  background-color:#0c0c0c;
+  padding: 45px 0 20px;
+  font-family: Gilroy;
+  line-height:24px;
+  color: #737373;
+}
+.site-footer hr
+{
+  border-top-color:#820AD1;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0;
+}
+.site-footer h6
+{
+  font-family: Gilroy;
+  font-size: 2vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #820AD1;
+}
+
+.site-footer a
+{
+  color:#820AD1;
+}
+
+.footer-links
+{
+  padding-left:0;
+  list-style:none;
+  text-decoration: none;
+  color: #fff;
+}
+.footer-links li
+{
+  display:block;
+  text-decoration: none;
+}
+.footer-links a
+{
+  color:#fff;
+  text-decoration: none;
+}
+.footer-links a:hover{
+  color:#820AD1;
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  transition-duration: 600ms;
+}
+.footer-links a:active,.footer-links a:focus
+{
+  color:#820AD1;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#0c0c0c
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+/*--------------------------------------------------------------
+	------ 
+-------------------------------------------------------------
