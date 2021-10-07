@@ -342,6 +342,63 @@ iframe {
   padding: 1vw;
 }
 
+.modal-body{
+  font-size: 1.5vw;
+  color: #820AD1;
+  background-color: #fff;
+  padding: auto;
+}
+.form-login-group{
+  height: 50%;
+  padding: 2vw;
+  height: 10vw;
+}
+
+.text-modal-body{
+  text-align: center;
+  font-size: 5vw;
+  line-height: 0.1;
+  float: left;
+  margin-top: 3.4vw;
+}
+.input-login{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-family: Gilroy;
+  font-size: 1vw;
+  border-bottom: 2px solid #820AD1;
+  height: 50%;
+  width: 100%;
+  color: #820AD1;
+}
+.button-login{
+  background-color: #820AD1;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+.button-login:hover, .button-login:focus, .button-login:active{
+  background-color: #fff;
+  color: #820AD1;
+  box-shadow: 8px 8px 32px #00000087;
+  transition-duration: 0.8s;
+}
+.button-password{
+  background-color: #1f1824;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1vw;
+  line-height: 1vw;
+  height: 5.1vw;
+  padding: auto;
+}
+.button-password:hover, .button-password:focus, .button-password:active{
+  background-color: #0c0c0c;
+  color:#fff;
+}
+
 /*--------------------------------------------------------------
 	BOTÕES
 --------------------------------------------------------------*/
