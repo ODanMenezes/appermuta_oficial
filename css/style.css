@@ -376,6 +376,7 @@ iframe {
   background-color: #820AD1;
   color: #fff;
   border: none;
+  height: 5vw;
   border-radius: 10px;
 }
 .button-login:hover, .button-login:focus, .button-login:active{
@@ -385,13 +386,13 @@ iframe {
   transition-duration: 0.8s;
 }
 .button-password{
-  background-color: #1f1824;
+  background-color: #301B3F;
   color: #fff;
   border: none;
   border-radius: 10px;
   font-size: 1vw;
   line-height: 1vw;
-  height: 5.1vw;
+  height: 5vw;
   padding: auto;
 }
 .button-password:hover, .button-password:focus, .button-password:active{
