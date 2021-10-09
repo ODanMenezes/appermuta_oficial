@@ -878,73 +878,173 @@ Favicons
             
             
           <!---MODAL LOGIN --->
+
+        <div class="container_login">
+          <div class="col-sm-4">
+
+            <div id="modal_login" class="w3-modal w3-animate-opacity">
+
+              <div class="w3-modal-content modal" style="background-image: url('imagem/poster-login.png'); background-size: 100%;">
+                    <button class="close_elipse" onclick="document.getElementById('modal_login').style.display='none'">
+                          <span class="material-icons outlined close">
+                            close
+                          </span>
+                    </button>
+                    <p style="margin-top: 10vw;">
+                      Acessar conta:
+                    </p>
+
+                <div class="container-fluid">
+                  
+                  <form class="caixa-login">
+         
+                    <h4 class="text-login">
+                      O Appermuta ajuda você a se conectar e compartilhar experiências entre as pessoas.
+                    </h4>
     
-            <div class="modal animated fadeIn" id="login_itech" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <section
-                          style="background-image: url('imagem/modal-login-img.png'); width: 100%; height: 150px; border-radius: 20px;">
-                          <h2 class="title-modal">Acessar Conta<br></h2>
-                        </section>
-                            <button type="button" class=" button-close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                    <div>
+                        <input type="text" id="fname" name="fname" type="tel" id="cpf" placeholder="Digite seu CPF" autocomplete="off"  class="input_login">
+                        <input type="password" id="fname" name="pwd" id="pass" name="password" minlength="10" placeholder="Senha" class="input_login" required>
+    
+                        <div class="wrapper_button_option">
+    
+                          <button type="button" class="button_option" data-toggle="modal" data-target="#myModal"
+                            onclick="document.getElementById('id01').style.display='block'">Esqueci minha senha.
+                          </button>
+                          <button type="button" class="button_option" data-toggle="modal" data-target="#myModal"
+                            onclick="document.getElementById('id01').style.display='block'">Quero me cadastrar.
+                          </button>
+    
                         </div>
-                        <div class="modal-body">
-                          <div class="text-modal-body">
-                            <span class="material-icons outlined">
-                              email
-                            </span>
-                          </div>
-                            <div class="form-login-group">
-                                  <label>Email:</label><br>
-                                <input type="email" class="input-login" aria-describedby="emailHelp" placeholder="Digite seu email">
-                            </div>
-                            <div class="text-modal-body">
-                              <span class="material-icons outlined">
-                                lock
-                              </span>
-                            </div>
-                            <div class="form-login-group">
-                                  <label>Senha:</label><br>
-                                  <input type="password" class="input-login" aria-describedby="emailHelp" placeholder="Digite sua senha corretamente">
-                            </div>
-                            <div class="text-center" id="loader_itech">
-                                <button type="button" class="button-password">
-                                  <span class="material-icons outlined">
-                                  mark_email_read
-                                  </span><br>Esqueci meu email
-                                </button>
-                                <button type="button" class="button-login">Fazer Login</button>
-                                <button type="button" class="button-password">
-                                  <span class="material-icons outlined">
-                                    no_encryption
-                                  </span><br>Esqueci a senha</button>
-                            </div>
-                        </div>
+    
+                        <button type="button" class="button_login" data-toggle="modal" data-target="#myModal"
+                          onclick="document.getElementById('id01').style.display='block'">ENTRAR
+                        </button>
+    
+    
+                        <script>
+    
+                          const togglePassword = document.querySelector('#togglePassword');
+                          const password = document.querySelector('#password');
+                          togglePassword.addEventListener('click', function (e) {
+                            // toggle the type attribute
+                            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+                            password.setAttribute('type', type);
+                            // toggle the eye / eye slash icon
+                            this.classList.toggle('bi-eye');
+                          });
+    
+                        </script>
+    
                     </div>
+                      
+                  </form>
+
+                  <div class="row justify-content-center" style="background-color: transparent;">
+
+                    <div style="width: auto;">
+
+                      <div class="card px-0 pt-4 pb-0 mt-3 mb-3" style="background-color: transparent;">
+
+                        <span onclick="document.getElementById('modal_login').style.display='none'"
+                          class="w3-button w3-large w3-display-topright close">
+                          <span class="material-icons outlined">
+                            close
+                          </span>
+                        </span>
+                          
+                      </div>
+                    </div>
+                  </div>
                 </div>
+
+                <script>
+
+                  $(document).ready(function () {
+
+                    var current_fs, next_fs, previous_fs; //fieldsets
+                    var opacity;
+                    var current = 1;
+                    var steps = $("fieldset").length;
+
+                    setProgressBar(current);
+
+                    $(".next").click(function () {
+
+                      current_fs = $(this).parent();
+                      next_fs = $(this).parent().next();
+
+                      //Add Class Active
+                      $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+                      //show the next fieldset
+                      next_fs.show();
+                      //hide the current fieldset with style
+                      current_fs.animate({ opacity: 0 }, {
+                        step: function (now) {
+                          // for making fielset appear animation
+                          opacity = 1 - now;
+
+                          current_fs.css({
+                            'display': 'none',
+                            'position': 'relative'
+                          });
+                          next_fs.css({ 'opacity': opacity });
+                        },
+                        duration: 500
+                      });
+                      setProgressBar(++current);
+                    });
+
+                    $(".previous").click(function () {
+
+                      current_fs = $(this).parent();
+                      previous_fs = $(this).parent().prev();
+
+                      //Remove class active
+                      $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+                      //show the previous fieldset
+                      previous_fs.show();
+
+                      //hide the current fieldset with style
+                      current_fs.animate({ opacity: 0 }, {
+                        step: function (now) {
+                          // for making fielset appear animation
+                          opacity = 1 - now;
+
+                          current_fs.css({
+                            'display': 'none',
+                            'position': 'relative'
+                          });
+                          previous_fs.css({ 'opacity': opacity });
+                        },
+                        duration: 500
+                      });
+                      setProgressBar(--current);
+                    });
+
+                    function setProgressBar(curStep) {
+                      var percent = parseFloat(100 / steps) * curStep;
+                      percent = percent.toFixed();
+                      $(".progress-bar")
+                        .css("width", percent + "%")
+                    }
+
+                    $(".submit").click(function () {
+                      return false;
+                    })
+
+                  });
+                </script>
+
+              </div>
+
             </div>
-            
-            <script>
 
-              $(document).ready(function(){
-   
-                $('#login_itech button').click(function(){
-                    $('#loader_itech').html('<img src="img/load_itech.gif">');
-                });
+          </div>
 
-              });
-              
-            </script>
-    
-            <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
-            <script type="text/javascript" src="js/bootstrap.min.js"></script>
-            <script type="text/javascript" src="js/login_main.js"></script>
-
-
-          <!-- MODAL !-->
+        <!---->
 
       </section>
 
