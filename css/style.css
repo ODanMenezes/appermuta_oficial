@@ -419,12 +419,9 @@ iframe {
   width: 5vw;
   height: 5vw;
   margin-top: 2vw;
+  padding: 1vw;
 }
 .close{
-  margin-top: auto;
-  margin-right: auto;
-  margin-left: 0.6vw;
-  margin-bottom: auto;
   color: #820AD1;
   font-size: 3vw;
   float: left;
