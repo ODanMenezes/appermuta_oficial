@@ -5,6 +5,7 @@ html {
   overflow-y: scroll;
   overflow-x: hidden;
   -ms-overflow-style: scrollbar;
+  font-family: Gilroy;
 }
 
 body {
