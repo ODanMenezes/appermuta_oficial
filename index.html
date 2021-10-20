@@ -71,6 +71,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 
   <link href="css/style.css" rel="stylesheet">
   <link id="color-scheme" href="css/style.css" rel="stylesheet">
@@ -287,13 +292,50 @@
           </ul>
       </nav>
 
-      <div class="cd-content-wrapper"
-        style="background-image: url('imagem/lady - section3.jpg'); background-size: 100%;">
+        <div class="cd-content-wrapper"
+        style="background-image: url('imagem/lady - section3.jpg'); background-size: 90vw;">
         <div class="text-component text-center">
           
           <h4 class="text-typing">
-            Aqui existem <span class="slide transparent move step" style="--n:53; float: right;margin-left: 7px;">
-              Oportunidades, Serviços, Crescimento e Talentos. </span>
+            
+            <div> Aqui existem <span class="typing"></span></div>
+
+              <script>
+                var typed = new Typed(".typing", {
+                  strings: ["Oportunidades", "Serviços", "Crescimentos", "Talentos", "Permutas"],
+                  typeSpeed: 100,
+                  backSpeed: 60,
+                  loop: true
+                  });
+                  var typed = new Typed(".typing-2", {
+                  strings: ["Oportunidades", "Serviços", "Crescimentos", "Talentos", "Permutas"],
+                  typeSpeed: 100,
+                  backSpeed: 60,
+                  loop: true
+                  });
+                  // owl carousel script
+                  $('.carousel').owlCarousel({
+                  margin: 20,
+                  loop: true,
+                  autoplay: true,
+                  autoplayTimeOut: 2000,
+                  autoplayHoverPause: true,
+                  responsive: {
+                      0:{
+                          items: 1,
+                          nav: false
+                      },
+                      600:{
+                          items: 2,
+                          nav: false
+                      },
+                      1000:{
+                          items: 3,
+                          nav: false
+                      }
+                  }
+                  });
+              </script>
           </h4>
 
         </div>
@@ -315,7 +357,11 @@
           nav.style.display = 'block';
         }
       }, false);
-    </script>
+  </script>
+  
+  </body>
+  </body>
+</nav>
 
     <body>
 
