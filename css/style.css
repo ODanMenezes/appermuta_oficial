@@ -931,7 +931,7 @@ input:focus + label {
   font-size: 2vw;
   box-shadow: 0 12px 12px #0000006d;
   padding: 1em;
-  transform: translateX(75%);
+  transform: translateX(95%);
 } 
 
 .caixa2{
