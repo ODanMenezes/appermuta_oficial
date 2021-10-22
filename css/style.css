@@ -1394,7 +1394,6 @@ p{
   border-radius: 0%;
   width: 100%;
   height: auto;
-  list-style-type: none;
   z-index:999;
   }
   .nav-links a {
@@ -1402,6 +1401,7 @@ p{
   text-decoration: none;
   margin-top: 1vw;
   margin-bottom: 1vw;
+  list-style-type: none;
   }
   .a_login{
   font-size: 2vw;
@@ -1415,7 +1415,7 @@ p{
   .logo {
     width: 35%;
     height: 35%;
-    margin-top: 10%;
+    margin-top: 20%;
     margin-left: 40%;
     margin-right: 40%;
   }
