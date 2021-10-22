@@ -1050,8 +1050,7 @@ p{
   .slider-wrap {
     height: auto;
     width: auto;
-    margin-top: 50%;
-    margin-bottom: 50vw;
+    margin-bottom: 30vw;
   }
 
   .slider-wrap .slider {
