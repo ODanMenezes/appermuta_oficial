@@ -1412,10 +1412,10 @@ p{
   }
   /* LOGO */
   .logo-menu {
-    width: 70%;
-    height: 70%;
-    margin-left: 2vw;
-    margin-right: 2vw;
+	width: 50%;
+	height: 50%;
+	margin-left: 2vw;
+	margin-right: 2vw;
   }
   /* NAVBAR MENU */
   .menu {
