@@ -1414,7 +1414,7 @@ p{
   .logo {
     width: 35%;
     height: 35%;
-    margin-top: 5%;
+    margin-top: 1vw;
     margin-left: 40%;
     margin-right: 40%;
   }
@@ -1480,7 +1480,7 @@ p{
   user-select: none;
   }
   /* APPLYING MEDIA QUERIES */
-  @media (max-width: 768px) {
+  @media (max-width: 400px) {
  .navbar{
    width: 100%;
    height: 10%;
@@ -1552,5 +1552,6 @@ p{
   .dropdown li:hover {
   background-color: #820AD1;
   color: #fff;
+  list-style-type: none;  
   }
   }
