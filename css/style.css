@@ -1411,11 +1411,11 @@ p{
   text-decoration-color: #820AD1;
   }
   /* LOGO */
-  .logo {
-    width: 80%;
-    height: 80%;
-    margin-left: 2vw;
-    margin-right: 2vw;
+  .logo-menu {
+    width: 90%;
+    height: 90%;
+    margin-left: 1vw;
+    margin-right: 1vw;
   }
   /* NAVBAR MENU */
   .menu {
@@ -1486,9 +1486,9 @@ p{
    padding: 2vw;
  }
   
-  .logo {
-  width: 60vw;
-  height: 10vw;
+  .logo-menu {
+  width: 80%;
+  height: 80%;
   margin-top: -8%;
   margin-left: 5%;
   margin-bottom: 1%;
