@@ -80,266 +80,105 @@
   <link href="css/style.css" rel="stylesheet">
   <link id="color-scheme" href="css/style.css" rel="stylesheet">
 
-   <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+<body>
 
-  <script>document.getElementsByTagName("html")[0].className += " js";</script>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <nav class="navbar">
+  <!-- LOGO -->
+  <div class="logo"><a href="index.html"><img src="imagem/logotipos/APPERMUTA-LOGO-HOME.png" alt="Logotipo de Appermuta, horizontal, na cor branca" class="logotipo"></a>
+  </div>
+  <div class="icon-circle">
+  <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+  </div>
+  <!-- NAVIGATION MENU -->
+  <ul class="nav-links" style="margin-left: 10%; margin-right: 10%;">
+  <!-- USING CHECKBOX HACK -->
+  <input type="checkbox" id="checkbox_toggle" />
 
-  </head>
-
-  <body>
-    <header class="cd-main-header js-cd-main-header" style="background-color: #212121;">
-
-      <div class="cd-logo-wrapper">
-        <a href="index.html" class="cd-logo"><img src="imagem/logotipos/APPERMUTA-LOGO-HOME.png" class="logotipo" alt="Logotipo oficial da Empresa Appermuta."></a>
-      </div>
-
-      <div class="cd-search js-cd-search">
-        <form>
-          <input class="reset" type="search" placeholder="Do que você precisa?">
-        </form>
-      </div>
-
-      <button class="reset cd-nav-trigger js-cd-nav-trigger" aria-label="Toggle menu"><span></span></button>
-
-      <ul class="cd-nav__list js-cd-nav__list">
-
-        <li class="cd-nav__item"><a href="#">Suporte</a></li>
-        <li class="cd-nav__item" for="modal" data-toggle="modal" data-target="modal_login"
-        onclick="document.getElementById('modal_login').style.display='block'"><a href="#">Login
-          
+  <!-- NAVIGATION MENUS -->
+  <div class="menu">
+  <li><a href="index.html">Página inicial</a></li>
+  <li><a href="#">Sobre nós</a></li>
+  <li class="services">
+    <a href="#">Serviços</a>
+    <!-- DROPDOWN MENU -->
+  <ul class="dropdown">
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr">
+        <li><a href="/">
           <span class="material-icons outlined">
-            login
-          </span>
-
-        </a></li>
-
-        <li class="cd-nav__item cd-nav__item--has-children cd-nav__item--account js-cd-item--has-children">
-          
-        </li>
-
-    </header>
-
-    <main class="cd-main-content" >
-      <nav class="cd-side-nav js-cd-side-nav">
-        <ul class="cd-side__list js-cd-side__list">
-          <li class="cd-side__label"><span></span></li>
-
-          <li class="cd-side__item cd-side__item--has-children cd-side__item--overview js-cd-item--has-children">
-
-            <a href="#">O Appermuta
-              <span class="cd-count">
-                <img src="imagem/appermuta-icon-minimalist.png" style="width: 2vw; height: 2vw;">
-              </span>
-            </a>
-
-            <ul class="cd-side__sub-list">
-
-              <li class="cd-side__sub-item">
-                <div class="cd-drop">
-                  <a href="#" itemprop='url' title='Home'><span itemprop='name'>
-                      Quem nós somos
-                    </span>
-                  </a>
-                </div>
-              </li>
-
-              <li class="cd-side__sub-item">
-                <div class="cd-drop">
-                  <a href="#" itemprop='url' title='Home'><span itemprop='name'>
-                      Política de Privacidade
-                    </span></a>
-                  </a>
-                </div>
-              </li>
-
-              <li class="cd-side__sub-item">
-                <div class="cd-drop">
-                  <a href="#" itemprop='url' title='Home'><span itemprop='name'>
-                      Sobre os serviços
-                    </span>
-                  </a>
-                </div>
-              </li>
-
-            </ul>
-
-          </li>
-
-
-          <li class="cd-side__label"><span>SEU MENU</span></li>
-
-          <li class="cd-side__item cd-side__item--has-children cd-side__item--overview js-cd-item--has-children">
-
-            <a href="#">Serviços
-              <span class="cd-count">
-                <span class="material-icons outlined">
-                  room_service
-                </span>
-              </span></a>
-
-
-            <ul class="cd-side__sub-list">
-
-              <div class="wrapper-menu">
-
-                <button class="button-categories-bar 1"><a>
-                    <span class="material-icons outlined">
-                      handyman
-                    </span><br> Assitência Técnica </a>
-                </button>
-
-                <button class="button-categories-bar 2"><a>
-                    <span class="material-icons outlined">
-                      school
-                    </span><br> Aula </a>
-                </button>
-
-                <button class="button-categories-bar 3"><a>
-                    <span class="material-icons outlined">
-                      groups
-                    </span><br> Consultoria </a>
-                </button>
-
-                <button class="button-categories-bar 4"><a>
-                    <span class="material-icons outlined">
-                      design_services
-                    </span><br> Design </a>
-                </button>
-
-                <button class="button-categories-bar 5"><a>
-                    <span class="material-icons outlined">
-                      theater_comedy
-                    </span><br> Eventos </a>
-                </button>
-
-                <button class="button-categories-bar 6"><a>
-                    <span class="material-icons outlined">
-                      dry_cleaning
-                    </span><br> Moda e Beleza </a>
-                </button>
-
-                <button class="button-categories-bar 7"><a>
-                    <span class="material-icons outlined">
-                      engineering
-                    </span><br> Reformas e Reparos </a>
-                </button>
-
-                <button class="button-categories-bar 8"><a>
-                    <span class="material-icons outlined">
-                      health_and_safety
-                    </span><br> Saúde </a>
-                </button>
-
-                <button class="button-categories-bar 9"><a>
-                    <span class="material-icons outlined">
-                      cottage
-                    </span><br> Serviços Domésticos </a>
-                </button>
-
-              </div>
-
-            </ul>
-
-          </li>
-
-          <li
-            class="cd-side__item cd-side__item--has-children cd-side__item--notifications cd-side__item--selected js-cd-item--has-children">
-            <a href="#">Para você
-              <span class="cd-count">
-                <span class="material-icons outlined">
-                  volunteer_activism
-                </span>
-              </span></a>
-
-            <ul class="cd-side__sub-list">
-              <li class="cd-side__sub-item"><a aria-current="page" href="#">Compartilhe suas experiências e reserve
-                  chances de mudar a vidas das pessoas.</a></li>
-
-              <li class="cd-side__sub-item button-menu">
-                <a href="#">
-                  Compartilhar <span class="cd-count">
-                    <span class="material-icons outlined">
-                      share
-                    </span>
-                  </span></a>
-              </li>
-
-              <li class="cd-side__sub-item">
-                <a href="#">
-                  Comentar <span class="cd-count">
-                    <span class="material-icons outlined">
-                      chat
-                    </span>
-                  </span></a>
-              </li>
-
-              <li class="cd-side__sub-item">
-                <a href="#">
-                  Relatar abuso <span class="cd-count">
-                    <span class="material-icons outlined">
-                      report_problem
-                    </span>
-                  </span></a>
-              </li>
-            </ul>
-          </li>
-
-          <ul class="cd-side__list js-cd-side__list">
-            <li class="cd-side__label"><span>Quero fazer parte da equipe</span></li>
-            <li class="cd-side__btn"><button class="button-menu" data-toggle="modal" data-target="#myModal"
-                onclick="document.getElementById('id01').style.display='block'">CADASTRAR</button></li>
-          </ul>
-      </nav>
-
-        <div class="cd-content-wrapper" style="background-image: url('imagem/lady - section3.jpg'); background-size: 100%; background-repeat: no-repeat; padding: 15%;">
-        <div class="text-component text-center">
-          
-          <h4 class="text-typing">
-            
-            <div style="margin-left: 10vw; margin-right: 10vw; margin-bottom: 12%;"> Aqui existem <span class="typing" style="font-weight: bold;"></span>.</div>
-
-              <script>
-                var typed = new Typed(".typing", {
-                  strings: ["Possibilidades", "Serviços", "Crescimentos", "Talentos", "Expansões"],
-                  typeSpeed: 100,
-                  backSpeed: 60,
-                  loop: true
-                  });
-                  var typed = new Typed(".typing-2", {
-                  strings: ["Possibilidades", "Serviços", "Crescimentos", "Talentos", "Expansões"],
-                  typeSpeed: 100,
-                  backSpeed: 60,
-                  loop: true
-                  });
-              </script>
-              
-          </h4>
-
-        </div>
-
-      </div>
-      </div>
-    </main>
-
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/menu-aim.js"></script>
-    <script src="assets/js/main.js"></script>
-
-    <script>
-      document.getElementById('menu').addEventListener('click', function () {
-        var nav = document.getElementsByTagName('nav')[0];
-        if (nav.style.display == 'block') {
-          nav.style.display = 'none';
-        } else {
-          nav.style.display = 'block';
-        }
-      }, false);
-  </script>
+          handyman
+          </span><br>Assistência Técnica</a></li>
+        <li><a href="/">
+          <span class="material-icons outlined">
+            school
+          </span><br>Aula</a></li>
+        <li>
+          <span class="material-icons outlined">
+          groups
+          </span><br><a href="/">Consultoria</a></li>
+        <li>
+          <span class="material-icons outlined">
+            design_services
+          </span><br><a href="/">Design</a></li>
+        <li>
+          <span class="material-icons outlined">
+            theater_comedy
+          </span><br><a href="/">Eventos</a></li>
+        <li>
+          <span class="material-icons outlined">
+            dry_cleaning
+          </span><br><a href="/">Moda e Beleza</a></li>
+        <li>
+          <span class="material-icons outlined">
+            engineering
+          </span><br><a href="/">Reformas e Reparos</a></li>
+        <li>
+          <span class="material-icons outlined">
+            health_and_safety
+          </span><br><a href="/">Saúde</a></li>
+        <li>
+          <span class="material-icons outlined">
+            cottage
+          </span><br><a href="/">Serviços Domésticos</a></li>
+    </div>
+    </ul>
+  </li>
+  <li><a href="#">Ajuda</a></li>
+  <div class="a_login">
+  <li><a href="#" for="modal" data-toggle="modal" data-target="modal_login"
+    onclick="document.getElementById('modal_login').style.display='block'">Login
+  <span class="material-icons outlined">
+    login
+  </span>
+  </a></li></div>
+  </div>
+  </ul>
+  </nav>
+  </body>
   
-  </body>
-  </body>
-</nav>
+  <section class="section2" style="background-image: url('imagem/lady - section3.jpg'); 
+                                       background-size: 100%; background-repeat: no-repeat; 
+                                       padding: 10%;">
+        <h4 class="text-typing">
+            
+          <div style="margin-left: 10vw; margin-right: 10vw; margin-top: 5vw; margin-bottom: 5vw;"> Aqui existem <span class="typing" style="font-weight: bold;"></span>.</div>
+
+            <script>
+              var typed = new Typed(".typing", {
+                strings: ["Possibilidades", "Serviços", "Crescimentos", "Talentos", "Expansões"],
+                typeSpeed: 100,
+                backSpeed: 60,
+                loop: true
+                });
+                var typed = new Typed(".typing-2", {
+                strings: ["Possibilidades", "Serviços", "Crescimentos", "Talentos", "Expansões"],
+                typeSpeed: 100,
+                backSpeed: 60,
+                loop: true
+                });
+            </script>
+            
+        </h4>
+      </section>
 
     <body>
 
