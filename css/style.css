@@ -1401,7 +1401,6 @@ p{
   text-decoration: none;
   margin-top: 1vw;
   margin-bottom: 1vw;
-  list-style-type: none;
   }
   .a_login{
   font-size: 2vw;
@@ -1415,7 +1414,7 @@ p{
   .logo {
     width: 35%;
     height: 35%;
-    margin-top: 20%;
+    margin-top: 15%;
     margin-left: 40%;
     margin-right: 40%;
   }
@@ -1433,11 +1432,13 @@ p{
   }
   .menu li {
   padding: 1vw 2vw;
+  list-style-type: none;  
   }
   /* DROPDOWN MENU */
   .services {
   position: relative; 
   text-align: center;
+  list-style-type: none;  
   }
   .dropdown {
   background-color: #820AD1;
@@ -1448,6 +1449,7 @@ p{
   border-radius: 1vw;
   transition-duration: 0.4s;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  list-style-type: none;  
   }
   .dropdown li + li {
   margin-top: 10px;
@@ -1456,6 +1458,7 @@ p{
   padding: 0.5em 1em;
   width: 8em;
   text-align: center;
+  list-style-type: none;  
   }
   .dropdown li:hover {
   background-color: #820AD1;
