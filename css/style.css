@@ -1380,3 +1380,170 @@ p{
 /*--------------------------------------------------------------
 	------ 
 -------------------------------------------------------------
+
+  /* NAVBAR Estilos */
+  .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5vw;
+  background-color: #0c0c0c;
+  font-family: 'Gilroy';
+  color: #fff;
+  position: fixed;
+  border-radius: 0%;
+  width: 100%;
+  height: auto;
+  z-index:999;
+  }
+  .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  }
+  .a_login{
+  font-size: 2vw;
+  }
+  .a_login:hover{
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #820AD1;
+  }
+  /* LOGO */
+  .logo {
+    width: 35%;
+    height: 35%;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  /* NAVBAR MENU */
+  .menu {
+  display: flex;
+  gap: 1em;
+  font-size: 2vw;
+  }
+  .menu li:hover {
+  background-color: #820AD1;
+  color: #fff;
+  border-radius: 5vw;
+  transition: 0.3s ease;
+  }
+  .menu li {
+  padding: 1vw 2vw;
+  }
+  /* DROPDOWN MENU */
+  .services {
+  position: relative; 
+  text-align: center;
+  }
+  .dropdown {
+  background-color: #820AD1;
+  font-size: 1.5vw;
+  padding: 1em 0;
+  position: absolute;
+  display: none;
+  border-radius: 1vw;
+  transition-duration: 0.4s;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  }
+  .dropdown li + li {
+  margin-top: 10px;
+  }
+  .dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+  }
+  .dropdown li:hover {
+  background-color: #820AD1;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  }
+  .services:hover .dropdown {
+  display: block;
+  }
+  /*RESPONSIVE NAVBAR MENU STARTS*/
+  /* CHECKBOX HACK */
+  input[type=checkbox]{
+  display: none;
+  } 
+  /*HAMBURGER MENU*/
+  .hamburger {
+  display: none;
+  font-size: 3vw;
+  user-select: none;
+  }
+  /* APPLYING MEDIA QUERIES */
+  @media (max-width: 768px) {
+ .navbar{
+   width: 100%;
+   height: 10%;
+   padding: 2vw;
+ }
+  
+  .logo {
+  width: 60vw;
+  height: 10vw;
+  margin-top: -8%;
+  margin-left: 5%;
+  margin-bottom: 1%;
+  }
+  .menu { 
+  display:none;
+  position: absolute;
+  background-color:#0c0c0c;
+  color: #fff;
+  font-size: 3vw;
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding: 10px 0;
+  height: auto;
+  width: 100%;
+  }
+  .menu li:hover {
+  display: inline-block;
+  background-color:#820AD1;
+  color: #fff;
+  transition: 0.3s ease;
+  }
+  .a_login{
+  font-size: 3vw;
+  }
+  .a_login:hover{
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #820AD1;
+  }
+  .menu li + li {
+  margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu{
+  display: block;
+  }
+  .hamburger {
+  display: block;
+  border: none;
+  border-radius: 50vw;
+  font-size: 4vw;
+  }
+  .icon-circle{
+    border: none;
+    border-radius: 10vw;
+    width: auto;
+    height: auto;
+  }
+  .icon-circle:active, .icon-circle:hover, .icon-circle:focus{
+    background-color: #fff;
+    color:#820AD1;
+  }
+  .dropdown {
+  left: 50%;
+  top: 1px;
+  transform: translateX(35%);
+  }
+  .dropdown li:hover {
+  background-color: #820AD1;
+  color: #fff;
+  }
+  }
