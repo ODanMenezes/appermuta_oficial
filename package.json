@@ -1,0 +1,16 @@
+{
+  "name": "appermuta_repo",
+  "version": "1.0.0",
+  "description": "Appermuta.com é uma plataforma online cuja a visão é trocar reciprocamente serviços e conhecimentos por todo o Brasil. Ela tem o potencial de ajudar prestadores de serviços, sejam diplomados ou não, a conquistar experiências incríveis no mercado de trabalho e, principlamente, nas relações interpessoais, com máxima segurança.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^4.2.1"
+  }
+}
