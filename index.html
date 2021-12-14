@@ -461,8 +461,9 @@
                           <h2 class="title-modal"><br>Sua nova fase começa agora!<br></h2>
                         </section>
 
-                        <form id="msform">
+                        <form id="msform" action="./functions/control/ctr-usuario.php" method="post">
                           <!-- progressbar -->
+                          <input type='hidden' name="insert">
                           <ul id="progressbar">
                             <li class="active" id="account"><strong>Conta</strong></li>
                             <li id="personal"><strong>Dados pessoais</strong></li>
@@ -483,21 +484,21 @@
                                   <h2 class="steps">Momento 1 de 4</h2>
                                 </div>
                               </div>
-                              <label class="fieldlabels">CPF: </label> <input type="number" name="cpf"
+                              <label class="fieldlabels">CPF: </label> <input type="number" name="txtCpf"
                                 placeholder="Confirme seu CPF" />
                               <label class="fieldlabels"> Nome: </label>
 
-                              <input type="text" name="uname" placeholder="Digite seu primeiro nome"
+                              <input type="text" name="txtNome" placeholder="Digite seu primeiro nome"
                                 class="input-modal" />
 
-                              <input type="text" name="sobname" placeholder="Digite seu sobrenome"
+                              <input type="text" name="txtSobrenome" placeholder="Digite seu sobrenome"
                                 class="input-modal" />
 
-                              <label class="fieldlabels"> Email: </label> <input type="email" name="email"
+                              <label class="fieldlabels"> Email: </label> <input type="email" name="txtEmail"
                                 placeholder="Digite seu email ativo" />
                               <label class="fieldlabels">Crie uma senha:</label> <input
                                 style="background-color: #fff; color: #820AD1; border: 2px solid #820AD1;"
-                                type="password" name="pwd" placeholder="Digite uma senha forte" />
+                                type="password" name="txtSenha" placeholder="Digite uma senha forte" />
 
                               <script>
 
@@ -526,23 +527,23 @@
                                 <div class="col-5">
                                   <h2 class="steps">Momento 2 de 4</h2>
                                 </div>
-                              </div> <label class="fieldlabels">RG:</label> <input type="number" name="rg"
+                              </div> <label class="fieldlabels">RG:</label> <input type="number" name="txtRg"
                                 placeholder="Digite os oito números do RG" />
                               <label class="fieldlabels">
-                                Data de nascimento: </label> <input type="date" id="start" name="nasci"
+                                Data de nascimento: </label> <input type="date" id="start" name="txtDataNasc"
                                 value="2018-07-22" min="1920-01-01" max="2021-01-01">
                               <label class="fieldlabels">
 
-                                CEP:</label> <input type="number" name="cep"
+                                CEP:</label> <input type="number" name="txtCep"
                                 placeholder="Digite os oito números do CEP" />
                               <label class="fieldlabels">
-                                <input type="text" name="bairro" placeholder="Bairro" class="input-modal" />
+                                <input type="text" name="txtBairro" placeholder="Bairro" class="input-modal" />
 
-                                <input type="text" name="rua" placeholder="Rua" class="input-modal" />
+                                <input type="text" name="txtLogadouro" placeholder="Rua" class="input-modal" />
 
-                                <input type="text" name="complemento" placeholder="Complemento" class="input-modal" />
+                                <input type="text" name="txtComplemento" placeholder="Complemento" class="input-modal" />
 
-                                <input type="text" name="numbercasa" placeholder="Número da casa" class="input-modal" />
+                                <input type="text" name="txtNumCasa" placeholder="Número da casa" class="input-modal" />
 
                             </div> <input type="button" name="next" class="next action-button" value="Avançar" /> <input
                               type="button" name="previous" class="previous action-button-previous" value="Voltar" />

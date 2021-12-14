@@ -1,5 +1,5 @@
-var mongoDbClient =  require("./connection");
-var Usuario = require('./usuario');
+var mongoDbClient =  require("./model/connection");
+var Usuario = require('./model/usuario');
 
 var dbConnection = new mongoDbClient('site_appermuta');
 
